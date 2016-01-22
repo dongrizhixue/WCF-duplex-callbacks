@@ -22,5 +22,13 @@ namespace WCFService
             var callback = OperationContext.Current.GetCallbackChannel<IMessageCallBack>();
             listIMessageCallBack.Add(callback);
         }
+        /// <summary>
+        /// 客户端调用这个方法，将注销
+        /// </summary>
+        public void UnMonitorServer()
+        {
+            var callback = OperationContext.Current.GetCallbackChannel<IMessageCallBack>();
+            listIMessageCallBack.Remove(callback);
+        }
     }
 }

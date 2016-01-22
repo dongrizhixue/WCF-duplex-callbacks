@@ -16,5 +16,10 @@ namespace WCFService
         /// </summary>
         [OperationContract]
         void MonitorServer();
+        /// <summary>
+        /// 注销消息类
+        /// </summary>
+        [OperationContract]
+        void UnMonitorServer();
     }
 }
