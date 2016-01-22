@@ -32,7 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSend = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSendMsg = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -63,7 +63,7 @@
             this.groupBox2.Controls.Add(this.btnClose);
             this.groupBox2.Controls.Add(this.btnOpen);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtSendMsg);
             this.groupBox2.Controls.Add(this.btnSend);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
@@ -80,13 +80,14 @@
             this.btnSend.TabIndex = 0;
             this.btnSend.Text = "发送";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // textBox1
+            // txtSendMsg
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 1;
+            this.txtSendMsg.Location = new System.Drawing.Point(113, 62);
+            this.txtSendMsg.Name = "txtSendMsg";
+            this.txtSendMsg.Size = new System.Drawing.Size(100, 21);
+            this.txtSendMsg.TabIndex = 1;
             // 
             // label1
             // 
@@ -105,6 +106,7 @@
             this.btnOpen.TabIndex = 3;
             this.btnOpen.Text = "启动服务";
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnClose
             // 
@@ -114,6 +116,7 @@
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "关闭服务";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // MainForm
             // 
@@ -136,7 +139,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSendMsg;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClose;

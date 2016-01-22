@@ -11,7 +11,13 @@ namespace WCFService
     [ServiceContract]
     public interface IBaseService
     {
+        /// <summary>
+        /// 一个简单的加法运算
+        /// </summary>
+        /// <param name="a">被加数</param>
+        /// <param name="b">加数</param>
+        /// <returns>计算结果</returns>
         [OperationContract]
-        void DoWork();
+        int Addition(int a, int b);
     }
 }
