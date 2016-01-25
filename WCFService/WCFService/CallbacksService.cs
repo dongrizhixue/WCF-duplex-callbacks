@@ -27,6 +27,7 @@ namespace WCFService
         /// </summary>
         public void UnMonitorServer()
         {
+            //这个注销的方法没有起作用
             var callback = OperationContext.Current.GetCallbackChannel<IMessageCallBack>();
             listIMessageCallBack.Remove(callback);
         }
